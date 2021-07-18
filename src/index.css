@@ -8,7 +8,6 @@
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -30,14 +29,16 @@ body {
   -o-background-size: cover;
   min-height: 100vh;
   color: white;
+  height: 100%;
+  margin: 0;
 }
-body::after {
+body::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100%;
   background: repeating-linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.15),
@@ -171,6 +172,9 @@ Navbar
     padding-top: 30%;
     padding-bottom: 20%;
   }
+  body::before {
+    min-height: 158%;
+  }
 }
 
 .btn {
@@ -203,7 +207,7 @@ Navbar
   min-height: 100vh;
   margin: auto;
   width: 70%;
-  padding: 50px;
+  padding: 30px;
   background-position: center;
   /* padding: 10px; */
   color: white;
