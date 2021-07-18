@@ -29,8 +29,8 @@ body {
   -o-background-size: cover;
   min-height: 100vh;
   color: white;
-  height: 100%;
   margin: 0;
+  height: 100%;
 }
 body::before {
   content: "";
@@ -38,7 +38,8 @@ body::before {
   top: 0;
   left: 0;
   min-width: 100vw;
-  min-height: 100%;
+  min-height: 100vh;
+
   background: repeating-linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.15),
@@ -46,8 +47,10 @@ body::before {
     transparent 1px,
     transparent 2px
   );
+
   pointer-events: none;
 }
+
 ul {
   list-style-type: none;
 }
@@ -161,22 +164,6 @@ Navbar
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .Zork {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    padding-top: 30%;
-    padding-bottom: 20%;
-  }
-  body::before {
-    min-height: 158%;
-  }
-}
-
 .btn {
   display: flex;
   align-items: center;
@@ -213,6 +200,7 @@ Navbar
   color: white;
   font: 1.3rem Inconsolata, monospace;
   text-shadow: 0 0 5px #c8c8c8;
+  
 }
 
 ::-moz-selection {
@@ -223,4 +211,17 @@ Navbar
 ::selection {
   background: #0080ff;
   text-shadow: none;
+}
+@media only screen and (max-width: 600px) {
+  .Zork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30%;
+    padding-bottom: 20%;
+  }
+
 }
