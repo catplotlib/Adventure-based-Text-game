@@ -32,24 +32,7 @@ body {
   margin: 0;
   height: 100%;
 }
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
-  min-height: 100vh;
 
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15) 1px,
-    transparent 1px,
-    transparent 2px
-  );
-
-  pointer-events: none;
-}
 
 ul {
   list-style-type: none;
@@ -164,6 +147,23 @@ Navbar
   }
 }
 
+.Home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -191,16 +191,31 @@ Navbar
   background-color: black;
   background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
   background-size: cover;
-  min-height: 100vh;
   margin: auto;
+  min-height: 70vh;
   width: 70%;
   padding: 30px;
   background-position: center;
-  /* padding: 10px; */
   color: white;
   font: 1.3rem Inconsolata, monospace;
   text-shadow: 0 0 5px #c8c8c8;
-  
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
 }
 
 ::-moz-selection {
@@ -223,5 +238,7 @@ Navbar
     padding-top: 30%;
     padding-bottom: 20%;
   }
-
+  .container::before {
+    min-height: 158vh;
+  }
 }
