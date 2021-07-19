@@ -105,7 +105,7 @@ const textNodes = [
       {
         text: "Throw the blue goo at it",
         requiredState: (currentState) => currentState.blueGoo,
-        nextText: 11,
+        nextText: 12,
       },
     ],
   },
@@ -140,7 +140,7 @@ const textNodes = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     text: "You threw your jar of goo at the monster and it exploded. After the dust settled you saw the monster was destroyed. Seeing your victory you decide to claim this castle as your and live out the rest of your days there.",
     options: [
       {
