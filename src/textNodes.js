@@ -100,12 +100,12 @@ const textNodes = [
       {
         text: "Hide behind your shield",
         requiredState: (currentState) => currentState.shield,
-        nextText: 11,
+        nextText: 10,
       },
       {
         text: "Throw the blue goo at it",
         requiredState: (currentState) => currentState.blueGoo,
-        nextText: 12,
+        nextText: 11,
       },
     ],
   },
@@ -130,7 +130,7 @@ const textNodes = [
     ],
   },
   {
-    id: 11,
+    id: 10,
     text: "The monster laughed as you hid behind your shield and ate you.",
     options: [
       {
@@ -140,7 +140,7 @@ const textNodes = [
     ],
   },
   {
-    id: 12,
+    id: 11,
     text: "You threw your jar of goo at the monster and it exploded. After the dust settled you saw the monster was destroyed. Seeing your victory you decide to claim this castle as your and live out the rest of your days there.",
     options: [
       {
