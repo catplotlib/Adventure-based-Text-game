@@ -1,7 +1,7 @@
-import Home from "./Home";
-import About from "./About";
-import Game from "./Game";
-import Navbar from "./Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Game from "./components/Game";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {

@@ -1,4 +1,4 @@
-import wel from "./assets/WELCOME.png";
+import wel from "../assets/WELCOME.png";
 import { Link } from "react-router-dom";
 function Home() {
   return (
