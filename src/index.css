@@ -264,7 +264,7 @@ Navbar
 
 .btn-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   gap: 10px;
   margin-top: 20px;
 }
@@ -280,7 +280,8 @@ Navbar
     padding-top: 30%;
     padding-bottom: 20%;
   }
-  .container::before {
-    min-height: 158vh;
+
+  .btn-grid {
+    flex-wrap: wrap;
   }
 }

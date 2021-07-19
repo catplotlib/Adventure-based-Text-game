@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Link style={navStyle} to="/">
-            <h1>Zork</h1>
+            <h1>Aximos</h1>
           </Link>
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />

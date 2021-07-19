@@ -14,8 +14,7 @@ const Game = () => {
     if (answerOption.hasOwnProperty("setState")) {
       setCurrentState(answerOption.setState);
     }
-
-    setIns(current[0].id -1);
+    setIns(current[0].id - 1);
   };
   return (
     <>
@@ -38,19 +37,18 @@ const Game = () => {
                     </>
                   );
                 }
-              }
-              else{
-              return (
-                <>
-                  <button
-                    key={index}
-                    className="btn"
-                    onClick={() => handleAnswerOptionClick(answerOption)}
-                  >
-                    {answerOption.text}
-                  </button>
-                </>
-              );
+              } else {
+                return (
+                  <>
+                    <button
+                      key={index}
+                      className="btn"
+                      onClick={() => handleAnswerOptionClick(answerOption)}
+                    >
+                      {answerOption.text}
+                    </button>
+                  </>
+                );
               }
             }
           })}
