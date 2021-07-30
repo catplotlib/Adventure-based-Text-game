@@ -8,33 +8,12 @@ const Game = () => {
   const [textNodess, setTextNode] = useState(textNodes);
   const [options, setOptions] = useState(0);
 
-  // useEffect(() => {
-  //   textNodess.map((textNode) => {
-  //     if (textNodeIndex === textNode.id) {
-  //       setText(textNode.text);
-  //       setOptions(textNode.options);
-  //     }
-  //   });
-  //   console.log(textNodeIndex);
-  // }, [textNodeIndex]);
-
-  // const optionHandler = (e) => {
-  //   setTextNodeIndex(e.target.value);
-  //   console.log(e.target.value);
-  // };
+  
 
   const handleAnswerOptionClick = (nextState) => {
-    // if (isCorrect) {
-    // 	setScore(score + 1);
-    // }
+
     console.log(nextState);
     setIns(nextState);
-    // const nextQuestion = currentQuestion + 1;
-    // if (nextQuestion < questions.length) {
-    // 	setCurrentQuestion(nextQuestion);
-    // } else {
-    // 	setShowScore(true);
-    // }
   };
 
   return (
@@ -51,19 +30,7 @@ const Game = () => {
             </button>
           ))}
 
-          {/* <div id="option-buttons" className="btn-grid">
-          {options.map((option) => {
-            return (
-              <button
-                value={option.nextText}
-                class="btn"
-                onClick={optionHandler}
-              >
-                {option.text}
-              </button>
-            );
-          })}
-        </div> */}
+         
         </div>
       </div>
     </>
